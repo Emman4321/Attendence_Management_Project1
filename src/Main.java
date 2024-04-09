@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        AttendenceSheet attendenceSheet = new AttendenceSheet();
+        AttendenceSheet attendenceSheet = new AttendenceSheet(30);
 
         while (true){
             String command = scanner.nextLine();
@@ -15,7 +15,9 @@ public class Main {
                 case "here":
 
                     break;
+                case "print":
 
+                    break;
                 default:
                     System.out.println("Unknown command. Please try again.");
             }
