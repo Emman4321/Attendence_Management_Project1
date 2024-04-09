@@ -1,11 +1,25 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//IS147 Attendence Project
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         AttendenceSheet attendenceSheet = new AttendenceSheet();
 
-            System.out.println("HELLO");
+        while (true){
+            String command = scanner.nextLine();
 
+            switch (command){
+                case "add":
+
+                    break;
+                case "here":
+
+                    break;
+
+                default:
+                    System.out.println("Unknown command. Please try again.");
+            }
+        }
     }
 
 }

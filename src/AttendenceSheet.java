@@ -1,11 +1,13 @@
-import java.util.Scanner;
-
 public class AttendenceSheet {
-    Scanner
 
-    private String[] attendenceList;
+    private String[] studentList;
 
-    public AttendenceSheet(){
+    public AttendenceSheet(int size){
+        this.studentList = new String[size];
+    }
 
+    public boolean isPresent(String name){
+        //find the student in the array and mark as present
+        return false;
     }
 }
