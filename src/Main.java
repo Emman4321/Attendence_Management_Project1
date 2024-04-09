@@ -10,13 +10,13 @@ public class Main {
 
             switch (command){
                 case "add":
-
+                    //code to add names into the attendence sheet array
                     break;
                 case "here":
-
+                    //code to mark that person as present
                     break;
                 case "print":
-
+                    //code to print the attendence list of whose present and not present
                     break;
                 default:
                     System.out.println("Unknown command. Please try again.");
