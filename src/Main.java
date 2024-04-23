@@ -13,16 +13,16 @@ public class Main {
                     System.out.println("Please enter the student's name: ");
                     String name = scanner.nextLine();
 
-//                    attendenceSheet.addStudent(name);
+                    attendenceSheet.addStudent(name);
                     break;
                 case "here":
                     System.out.println("Are they here?: ");
                     String present = scanner.nextLine();
 
-//                    attendenceSheet.markHere(present);
+                    attendenceSheet.markHere(present);
                     break;
                 case "print":
-                    //attendenceSheet.print();
+                    attendenceSheet.print();
                     break;
                 default:
                     System.out.println("Unknown command. Please try again.");
