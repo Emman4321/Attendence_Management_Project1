@@ -10,13 +10,19 @@ public class Main {
 
             switch (command){
                 case "add":
-                    //code to add names into the attendence sheet array
+                    System.out.println("Please enter the student's name: ");
+                    String name = scanner.nextLine();
+
+//                    attendenceSheet.addStudent(name);
                     break;
                 case "here":
-                    //code to mark that person as present
+                    System.out.println("Are they here?: ");
+                    String present = scanner.nextLine();
+
+//                    attendenceSheet.markHere(present);
                     break;
                 case "print":
-                    //code to print the attendence list of whose present and not present
+                    //attendenceSheet.print();
                     break;
                 default:
                     System.out.println("Unknown command. Please try again.");
