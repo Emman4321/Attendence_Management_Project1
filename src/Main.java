@@ -6,6 +6,7 @@ public class Main {
         AttendenceSheet attendenceSheet = new AttendenceSheet(30);
 
         while (true){
+            System.out.println("Please enter a command (add, here, print, or end): ");
             String command = scanner.nextLine();
 
             switch (command){
@@ -16,7 +17,7 @@ public class Main {
                     attendenceSheet.addStudent(name);
                     break;
                 case "here":
-                    System.out.println("Are they here?: ");
+                    System.out.println("Which student is present?: ");
                     String present = scanner.nextLine();
 
                     attendenceSheet.markHere(present);
@@ -24,6 +25,8 @@ public class Main {
                 case "print":
                     attendenceSheet.print();
                     break;
+                case "end":
+                    return;
                 default:
                     System.out.println("Unknown command. Please try again.");
             }
