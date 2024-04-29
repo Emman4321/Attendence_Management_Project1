@@ -6,7 +6,7 @@ public class Main {
         AttendenceSheet attendenceSheet = new AttendenceSheet(30);
 
         while (true){
-            System.out.println("Please enter a command (add, here, print, or end): ");
+            System.out.println("Please enter a command (add, here, absent, print, total, or end): ");
             String command = scanner.nextLine();
 
             switch (command){
@@ -22,8 +22,17 @@ public class Main {
 
                     attendenceSheet.markHere(present);
                     break;
+                case "absent":
+                    System.out.println("Which student is absent?: ");
+                    String absent = scanner.nextLine();
+
+                    attendenceSheet.markAbs(absent);
+                    break;
                 case "print":
                     attendenceSheet.print();
+                    break;
+                case "total":
+                    attendenceSheet.calculateTotal();
                     break;
                 case "end":
                     return;
