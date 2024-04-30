@@ -47,8 +47,8 @@ public class AttendenceSheet {
                 presentStudents +=1;
             }
         }
-        double percentage = ((double) presentStudents / totalStudents) * 100;
-        System.out.println("There are " + presentStudents + " present students, making it " + percentage + "% of students present");
+        float percentage = ((float) presentStudents / totalStudents) * 100;
+        System.out.println("There is " + presentStudents + " present student(s), making it " + percentage + "% of students present");
 
         return percentage;
     }

@@ -1,12 +1,13 @@
 //IS147 Attendence Project
 import java.util.Scanner;
+import java.util.Date; // print the date along with students present (FUTURE)
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        AttendenceSheet attendenceSheet = new AttendenceSheet(30);
+        AttendenceSheet attendenceSheet = new AttendenceSheet(50);
 
         while (true){
-            System.out.println("Please enter a command (add, here, absent, print, total, or end): ");
+            System.out.println("Please enter a command (add, here, abs, print, total, or end): ");
             String command = scanner.nextLine();
 
             switch (command){
@@ -22,7 +23,7 @@ public class Main {
 
                     attendenceSheet.markHere(present);
                     break;
-                case "absent":
+                case "abs":
                     System.out.println("Which student is absent?: ");
                     String absent = scanner.nextLine();
 
