@@ -1,7 +1,15 @@
 //IS147 Attendence Project
 import java.util.Scanner;
 
+/**
+ * The main class for the attendance project.
+ */
 public class Main {
+    /**
+     * The main method where the program execution begins.
+     *
+     * @param args the command-line arguments
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         AttendenceSheet attendenceSheet = new AttendenceSheet();
