@@ -29,20 +29,20 @@ public class AttendenceSheet {
         }
     }
 
-    public void markHere(String name){
+    public void markHere(String name, boolean isExcused){
         // find the student in list and set status to true or here
         for (int j = 0; j < currentStudents; j++){
-            if (studentList[j] != null && studentList[j].getName().equals(name)) {
-                studentList[j].setPresence(true);
+            if (studentList[j] != null && name.equals(studentList[j].getName())) {
+                studentList[j].setPresence(true, isExcused);
                 break;
             }
         }
     }
-    public void markAbs(String name){
+    public void markAbs(String name, boolean isExcused){
         // finds the student in the list and marks them absent
         for (int l = 0; l < currentStudents; l++){
             if (studentList[l] != null && studentList[l].getName().equals(name)) {
-                studentList[l].setPresence(false);
+                studentList[l].setPresence(false, isExcused);
                 break;
             }
         }
@@ -79,7 +79,8 @@ public class AttendenceSheet {
     public void print(){
         for (int k = 0; k < studentList.length; k++) {
             if (studentList[k] != null){
-                System.out.println(studentList[k].getName() + ": " + (studentList[k].getPresence() ? "Present" : "Absent"));
+                String status = studentList[k].getPresence() ? "Present" : (studentList[k].isExcused() ? "Absent (Excused)" : "Absent");
+                System.out.println(studentList[k].getName() + ": " + status);
             }
         }
     }

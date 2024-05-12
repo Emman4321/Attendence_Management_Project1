@@ -30,19 +30,21 @@ public class Main {
                     System.out.println("Please enter multiple students' names, seperated by commas: ");
                     String names = scanner.nextLine();
 
-                    attendenceSheet.addStudent(names.split(", "));
+                    attendenceSheet.addStudent(names.split(","));
                     break;
                 case "here":
                     System.out.println("Which student is present?: ");
                     String present = scanner.nextLine();
 
-                    attendenceSheet.markHere(present);
+                    attendenceSheet.markHere(present, true);
                     break;
                 case "abs":
                     System.out.println("Which student is absent?: ");
                     String absent = scanner.nextLine();
 
-                    attendenceSheet.markAbs(absent);
+                    System.out.println("Is the absence excused? (yes/no): ");
+                    String excused = scanner.nextLine();
+                    attendenceSheet.markAbs(absent, excused.equalsIgnoreCase("yes"));
                     break;
                 case "print":
                     attendenceSheet.print();
