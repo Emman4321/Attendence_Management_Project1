@@ -29,8 +29,6 @@ public class AttendenceSheet {
         }
     }
 
-
-
     public void markHere(String name){
         // find the student in list and set status to true or here
         for (int j = 0; j < currentStudents; j++){

@@ -7,7 +7,7 @@ public class Main {
         AttendenceSheet attendenceSheet = new AttendenceSheet();
 
         while (true){
-            System.out.println("Please enter a command (add, addplus, here, abs, print, total, rand, or end): ");
+            System.out.println("Please enter a command (add, addplus, here, abs, print, total, rand, or end to stop): ");
             String command = scanner.nextLine();
 
             switch (command){
@@ -21,7 +21,7 @@ public class Main {
                     System.out.println("Please enter multiple students' names, seperated by commas: ");
                     String names = scanner.nextLine();
 
-                    attendenceSheet.addStudent(names.split(","));
+                    attendenceSheet.addStudent(names.split(", "));
                     break;
                 case "here":
                     System.out.println("Which student is present?: ");
