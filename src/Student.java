@@ -14,6 +14,7 @@ public class Student extends Excused{
      */
     public Student(String name){
         super(name);
+        this.name = name;
         this.isPresent = false;
         this.isExcused = false;
     }

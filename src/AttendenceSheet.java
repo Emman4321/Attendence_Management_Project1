@@ -79,8 +79,7 @@ public class AttendenceSheet {
     public void print(){
         for (int k = 0; k < studentList.length; k++) {
             if (studentList[k] != null){
-                String status = studentList[k].getPresence() ? "Present" : (studentList[k].isExcused() ? "Absent (Excused)" : "Absent");
-                System.out.println(studentList[k].getName() + ": " + status);
+                System.out.println(studentList[k].getName() + ": " + (studentList[k].getPresence() ? "Present" : (studentList[k].isExcused() ? "Absent (Excused)" : "Absent")));
             }
         }
     }
