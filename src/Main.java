@@ -1,5 +1,5 @@
 //IS147 Attendence Project
-// Group Project
+// Group Project IS147
 import java.util.Scanner;
 
 /**
