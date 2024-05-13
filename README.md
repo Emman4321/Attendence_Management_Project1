@@ -6,7 +6,10 @@ Group Roles: <br />
 
 Main coder: Emmanuel Fatungase <br />
 
-Trouble Shooter/Editor: Chase Wagner <br />
+Trouble Shooter: Chase Wagner <br />
+
+Editor: Ayan Hassen  <br />
+
 
 Project Manager: Meira Berlow<br />
 
