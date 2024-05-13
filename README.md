@@ -1,6 +1,6 @@
 **Project Name: Attendance Management Project**<br />
 
-**Group Members: Meira Berlow, Emmanuel Fatungase, Chase Wagner, and Junior**
+**Group Members: Meira Berlow, Emmanuel Fatungase, Chase Wagner, and Junior and Ayan Hassen**
 
 Group Roles: <br />
 
