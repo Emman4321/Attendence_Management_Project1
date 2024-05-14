@@ -8,10 +8,11 @@ Main coder: Emmanuel Fatungase <br />
 
 Trouble Shooter: Chase Wagner <br />
 
-Editor: Ayan Hassen  <br />
+Editor: Meira Berlow<br />
 
 
-Project Manager: Meira Berlow<br />
+Project Manager: Ayan Hassen
+
 
 Sub Coder: Junior <br />
 
